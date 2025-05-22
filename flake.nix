@@ -13,7 +13,15 @@
           buildInputs = with pkgs; [
             cmake
             clang  # or clang
+	    gdb
             cgdb
+	    
+	    dbus
+	    pkg-config
+	    alsa-lib
+	    xorg.libX11
+	    wayland
+	    libffi
           ];
         };
       });
